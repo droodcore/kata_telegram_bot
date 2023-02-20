@@ -1,0 +1,20 @@
+server:
+  port: 8084
+bot:
+  name: "droodcore_tesstt001_bot"
+  token: 5918266180:AAGAvm78BOmOIKRD4xslFdlClch93VVkNek
+spring:
+  kafka:
+    consumer:
+      bootstrap-servers: "localhost:9092"
+      auto-offset-reset: earliest
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      group-id: "group_id"
+      properties:
+        spring.json.trusted.packages: '*'
+
+    producer:
+      bootstarp-servers: locahost:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
